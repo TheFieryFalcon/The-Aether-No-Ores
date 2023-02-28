@@ -44,14 +44,6 @@ public class AetherBiomeDecorator extends BiomeDecorator
 
 	public WorldGenMinable aetherDirtGen = new WorldGenMinable(BlocksAether.aether_dirt.getDefaultState(), 32, (stateIn) -> stateIn.getBlock() == BlocksAether.holystone);
 
-	public WorldGenMinable icestoneGen = new WorldGenMinable(BlocksAether.icestone.getDefaultState(), 16, (stateIn) -> stateIn.getBlock() == BlocksAether.holystone);
-
-	public WorldGenMinable ambrosiumGen = new WorldGenMinable(BlocksAether.ambrosium_ore.getDefaultState(), 16, (stateIn) -> stateIn.getBlock() == BlocksAether.holystone);
-
-	public WorldGenMinable zaniteGen = new WorldGenMinable(BlocksAether.zanite_ore.getDefaultState(), 8, (stateIn) -> stateIn.getBlock() == BlocksAether.holystone);
-
-	public WorldGenMinable gravititeGen = new WorldGenMinable(BlocksAether.gravitite_ore.getDefaultState(), 6, (stateIn) -> stateIn.getBlock() == BlocksAether.holystone);
-
 	public AetherGenSkyrootTree skyroot_tree = new AetherGenSkyrootTree(false);
 
 	public AetherGenDungeonOakTree golden_oak_tree_dungeon = new AetherGenDungeonOakTree();
