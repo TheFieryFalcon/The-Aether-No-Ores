@@ -98,25 +98,6 @@ public class AetherBiomeDecorator extends BiomeDecorator
 			this.spawnOre(this.aetherDirtGen, 20, 128);
 		}
 
-		if (TerrainGen.generateOre(worldIn, random, this.icestoneGen, this.chunkPos, GenerateMinable.EventType.CUSTOM))
-		{
-			this.spawnOre(this.icestoneGen, 10, 128);
-		}
-
-		if (TerrainGen.generateOre(worldIn, random, this.ambrosiumGen, this.chunkPos, GenerateMinable.EventType.CUSTOM))
-		{
-			this.spawnOre(this.ambrosiumGen, 15, 128);
-		}
-
-		if (TerrainGen.generateOre(worldIn, random, this.zaniteGen, this.chunkPos, GenerateMinable.EventType.CUSTOM))
-		{
-			this.spawnOre(this.zaniteGen, 12, 128);
-		}
-
-		if (TerrainGen.generateOre(worldIn, random, this.gravititeGen, this.chunkPos, GenerateMinable.EventType.CUSTOM))
-		{
-			this.spawnOre(this.gravititeGen, 8, 128);
-		}
 
 		MinecraftForge.ORE_GEN_BUS.post(new OreGenEvent.Post(worldIn, random, this.chunkPos));
 
